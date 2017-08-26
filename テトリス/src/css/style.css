@@ -1,0 +1,42 @@
+body {
+    background-color: #263238;
+}
+dl{
+    position:relative;
+    right: 20%;
+    color:white;
+    float: right;
+}
+table {
+    margin: auto; /* 中央寄せ */
+    width: 400px;
+    height: 750px;
+}
+td {
+    width: 10%; /* 横10マス */
+    height: 5%; /* 縦20マス */
+}
+.default {
+    background-color: #455A64;
+}
+.tetrisI {
+    background-color: #03A9F4;
+}
+.tetrisO{
+    background-color: yellow;
+}
+.tetrisS{
+    background-color: red;
+}
+.tetrisZ{
+    background-color: green;
+}
+.tetrisL{
+    background-color: blue;
+}
+.tetrisJ{
+    background-color: greenyellow;
+}
+.tetrisT{
+    background-color: purple;
+}
