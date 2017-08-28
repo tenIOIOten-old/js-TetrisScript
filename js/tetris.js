@@ -2,7 +2,7 @@ const COLS = 10, ROWS = 20;  // 盤面のマスの数
 let board = [];  // 盤面の状態を保持する変数
 let lose;  // 一番うえまで積み重なっちゃったフラグ
 let interval;  // ゲームタイマー保持用変数
-let frame;
+let frame; // フレームタイマー保持用変数
 let current; // 現在操作しているブロック
 let currentX, currentY; // 現在操作しているブロックのいち
 // ブロックのパターン
