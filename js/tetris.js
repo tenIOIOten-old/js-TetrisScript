@@ -2,6 +2,7 @@ const COLS = 10, ROWS = 20;  // 盤面のマスの数
 let board = [];  // 盤面の状態を保持する変数
 let lose;  // 一番うえまで積み重なっちゃったフラグ
 let interval;  // ゲームタイマー保持用変数
+let frame;
 let current; // 現在操作しているブロック
 let currentX, currentY; // 現在操作しているブロックのいち
 // ブロックのパターン
@@ -150,9 +151,9 @@ function keyPress( key ) {
     }
     break;
   case 'start':
+    clearInterval(frame)
     newGame();
-    console.log('start')
-    setInterval( render, 30 );
+    frame = setInterval( render, 30 );
     break;
   }
 
@@ -283,3 +284,6 @@ document.body.onkeydown = function( e ) {
     render();
   }
 };
+
+init()
+render()
